@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,13 +12,20 @@
 
 	<h1 style="color: red">Je suis contact</h1>
 	<h2>Ok</h2>
-	<form action="">
+	<form action="welcome" method="post">
 		<label for="fname">First name:</label><br> <input type="text"
-			id="fname" name="fname" value="John"><br> <label
-			for="lname">Last name:</label><br> <input type="text" id="lname"
-			name="lname" value="Doe"><br>
+			id="fname" name="fname" ><br>
+			 <label
+			for="lname">Last name:</label><br>
+			 <input type="text" id="lname"
+			name="lname"><br>
+			<label for="email">email:</label><br> 
+			<input type="email" id="email"
+			name="email" ><br>
 		<br> <input type="submit" value="Submit">
+		
 	</form>
-	<div>${name}</div>
+	<div>email=${param.email}</div>
+	<h2><c:out value ="marcos"/></h2>
 </body>
 </html>

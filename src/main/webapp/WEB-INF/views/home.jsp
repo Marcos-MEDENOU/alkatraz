@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,5 +10,12 @@
 <body>
 	<%@include file= "Patials/header.jsp" %>;
 	<h1>home page</h1>
+	
+	<h1>nom=${param.fname}</h1>
+	<h1>prenoms=${param.lname}</h1>
+	<h1>email=${param.email}</h1>
+	
+	<h2><c:out value ="marcos"/></h2>
+	
 </body>
 </html>
